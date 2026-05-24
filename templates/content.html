@@ -1,0 +1,66 @@
+{% macro about() %}
+<div class="user-details">
+  <h1>About</h1>
+  <p>{{ config.extra.user_description }}</p>
+</div>
+<div class="user">
+  <div class="tech">
+    <h2>Code</h2>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-react-original-wordmark colored"></i>
+    <i class="devicon-nodejs-plain-wordmark"></i>
+    <p>Frontend and backend development for maintainable web applications.</p>
+  </div>
+  <div class="tech">
+    <h2>Systems</h2>
+    <i class="devicon-linux-plain"></i>
+    <i class="devicon-git-plain colored"></i>
+    <i class="devicon-docker-plain-wordmark colored"></i>
+    <p>Automation, deployment, and infrastructure workflows that keep projects simple to operate.</p>
+  </div>
+  <div class="tech">
+    <h2>Tools</h2>
+    <i class="devicon-github-original"></i>
+    <i class="devicon-sass-original colored"></i>
+    <i class="devicon-html5-plain-wordmark colored"></i>
+    <p>Static sites, documentation, and developer tooling with clear delivery paths.</p>
+  </div>
+</div>
+{% endmacro about %}
+
+{% macro projects() %}
+<div class="user-details">
+  <h1>Projects</h1>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountain landscape" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3>Personal Website</h3>
+    <ul>
+      <li>Zola</li>
+      <li>GitHub Pages</li>
+      <li>Custom domain</li>
+    </ul>
+    <p>A lightweight portfolio site generated with Zola and deployed automatically to GitHub Pages.</p>
+    <a class="project-link" href="https://github.com/{{ config.extra.github_username }}">GitHub</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="skateboarder" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+  </div>
+  <div class="contents-right">
+    <h3>More Work</h3>
+    <ul>
+      <li>Software</li>
+      <li>Automation</li>
+      <li>Web systems</li>
+    </ul>
+    <p>Use this section for a second featured project, product, or case study.</p>
+    <a class="project-link" href="mailto:{{ config.extra.email }}">Contact</a>
+  </div>
+</div>
+{% endmacro projects %}
+

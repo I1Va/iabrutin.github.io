@@ -14,6 +14,9 @@ zola serve
 The generated output goes to `public/`, which is intentionally ignored because
 GitHub Pages builds the site from source using GitHub Actions.
 
+The custom domain is also committed as [`static/CNAME`](static/CNAME) so every
+deployment publishes the Pages domain binding in the generated artifact.
+
 ## Publish on GitHub Pages
 
 1. Create a GitHub repository and push this project to its `main` branch.
@@ -24,4 +27,3 @@ GitHub Pages builds the site from source using GitHub Actions.
 6. Enable `Enforce HTTPS` after GitHub finishes issuing the certificate.
 
 DNS records are documented in [DNS.md](DNS.md).
-

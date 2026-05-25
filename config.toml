@@ -1,6 +1,6 @@
 base_url = "https://abrutin.ru"
-title = "Ilya Abrutin"
-description = "Personal website and project portfolio for Ilya Abrutin."
+title = "Ivan Abrutin"
+description = "Personal website and project portfolio for Ivan Abrutin."
 
 theme = "particle-zola"
 compile_sass = true
@@ -8,7 +8,7 @@ build_search_index = false
 default_language = "en"
 
 [extra]
-username = "Ilya Abrutin"
+username = "Ivan Abrutin"
 user_title = "Software Developer"
 user_description = "I build practical software, automation, and web systems."
 email = "iabrutin@abrutin.ru"

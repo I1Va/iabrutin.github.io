@@ -1,5 +1,5 @@
 +++
-title = "Ilya Abrutin"
-description = "Personal website and project portfolio for Ilya Abrutin."
+title = "Ivan Abrutin"
+description = "Personal website and project portfolio for Ivan Abrutin."
 +++
 

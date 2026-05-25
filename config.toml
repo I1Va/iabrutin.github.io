@@ -1,6 +1,6 @@
 base_url = "https://abrutin.ru"
 title = "Ivan Abrutin"
-description = "Personal website and project portfolio for Ivan Abrutin."
+description = "Biography, CV, and selected systems projects by Ivan Abrutin."
 
 theme = "particle-zola"
 compile_sass = true
@@ -9,8 +9,8 @@ default_language = "en"
 
 [extra]
 username = "Ivan Abrutin"
-user_title = "Software Developer"
-user_description = "I build practical software, automation, and web systems."
+user_title = "Computer Engineer"
+user_description = "MIPT student focused on systems programming, compilers, computer architecture, and practical engineering work."
 email = "iabrutin@abrutin.ru"
 github_username = "iabrutin"
 twitter_username = ""

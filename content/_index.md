@@ -1,5 +1,4 @@
 +++
 title = "Ivan Abrutin"
-description = "Personal website and project portfolio for Ivan Abrutin."
+description = "Biography, CV, and selected systems projects by Ivan Abrutin."
 +++
-

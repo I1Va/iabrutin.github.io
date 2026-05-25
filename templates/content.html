@@ -1,29 +1,32 @@
 {% macro about() %}
 <div class="user-details">
-  <h1>About</h1>
+  <h1>Biography</h1>
   <p>{{ config.extra.user_description }}</p>
+  <p>I am a MIPT student in Applied Mathematics and Computer Science, building my work at the intersection of systems programming, compiler infrastructure, computer architecture, and low-level performance engineering.</p>
+  <p>My recent work includes compiler and test-generation tasks at Baikal Electronics, course projects in C and C++, and independent graphics and tooling projects that grew out of my study track at MIPT.</p>
+  <p><a class="project-link" href="{{ config.base_url ~ "/files/ivan-abrutin-cv-2026.pdf" }}">Open CV (PDF)</a></p>
 </div>
 <div class="user">
   <div class="tech">
-    <h2>Code</h2>
+    <h2>Education</h2>
     <i class="devicon-javascript-plain colored"></i>
     <i class="devicon-react-original-wordmark colored"></i>
     <i class="devicon-nodejs-plain-wordmark"></i>
-    <p>Frontend and backend development for maintainable web applications.</p>
+    <p>MIPT, School of Applied Mathematics and Informatics. Strong coursework in C, C++, compilation, algorithms, and computer systems.</p>
   </div>
   <div class="tech">
-    <h2>Systems</h2>
+    <h2>Experience</h2>
     <i class="devicon-linux-plain"></i>
     <i class="devicon-git-plain colored"></i>
     <i class="devicon-docker-plain-wordmark colored"></i>
-    <p>Automation, deployment, and infrastructure workflows that keep projects simple to operate.</p>
+    <p>Baikal Electronics AI department internship, PTX test generation, LLVM-based compiler work, and academic projects in simulators, languages, and tooling.</p>
   </div>
   <div class="tech">
-    <h2>Tools</h2>
+    <h2>Focus</h2>
     <i class="devicon-github-original"></i>
     <i class="devicon-sass-original colored"></i>
     <i class="devicon-html5-plain-wordmark colored"></i>
-    <p>Static sites, documentation, and developer tooling with clear delivery paths.</p>
+    <p>Compilers, ISA and RTL study, microarchitecture, graphics, profiling, and building practical tools with clear technical depth.</p>
   </div>
 </div>
 {% endmacro about %}
@@ -34,33 +37,32 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountain landscape" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="MiniBlender screenshot" src="{{ config.base_url ~ "/img/blender.png" }}" />
   </div>
   <div class="contents">
-    <h3>Personal Website</h3>
+    <h3>MiniBlender</h3>
     <ul>
-      <li>Zola</li>
-      <li>GitHub Pages</li>
-      <li>Custom domain</li>
+      <li>C++</li>
+      <li>Graphics</li>
+      <li>CPU rendering</li>
     </ul>
-    <p>A lightweight portfolio site generated with Zola and deployed automatically to GitHub Pages.</p>
-    <a class="project-link" href="https://github.com/{{ config.extra.github_username }}">GitHub</a>
+    <p>A compact 3D editor built as a personal graphics project. It includes a custom rendering pipeline for polygons, cubes, and spheres, camera movement, object transforms, and scene loading.</p>
+    <a class="project-link" href="https://github.com/I1Va/MiniBlender">GitHub</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="skateboarder" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountain landscape" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
   </div>
   <div class="contents-right">
-    <h3>More Work</h3>
+    <h3>PTX Snippy and Compiler Work</h3>
     <ul>
-      <li>Software</li>
-      <li>Automation</li>
-      <li>Web systems</li>
+      <li>LLVM</li>
+      <li>PTX</li>
+      <li>CUDA</li>
     </ul>
-    <p>Use this section for a second featured project, product, or case study.</p>
-    <a class="project-link" href="mailto:{{ config.extra.email }}">Contact</a>
+    <p>After working on compiler and generator tasks at Baikal Electronics, I built a PTX-oriented prototype around LLVM Snippy. The project explored generation of PTX kernels, integration with CUDA Driver execution, and practical compiler tooling for GPU workflows.</p>
+    <a class="project-link" href="https://github.com/ctrlplusdvaraza/ptx-snippy">Repository</a>
   </div>
 </div>
 {% endmacro projects %}
-

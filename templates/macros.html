@@ -15,9 +15,8 @@
 {% macro footer() %}
 <footer class="footer">
   <p>&copy; {{ now() | date(format="%Y") }} {{ config.extra.username }}</p>
-  <p>Built with <a href="https://www.getzola.org/">Zola</a> and hosted on GitHub Pages.</p>
 </footer>
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ config.base_url ~ "/js/sweet-scroll.min.js" }}"></script>
 <script src="{{ config.base_url ~ "/js/main.js" }}"></script>
 {% endmacro footer %}
@@ -30,9 +29,9 @@
       <span class="site-description">{{ config.extra.user_title | linebreaksbr | safe }}</span>
     </h1>
     <div class="header-icons">
-      <a aria-label="Send email" href="mailto:{{ config.extra.email }}"><i class="icon fa fa-envelope"></i></a>
+      <a aria-label="Send email" href="mailto:{{ config.extra.header_email | default(value=config.extra.email) }}"><i class="icon fa fa-envelope"></i></a>
       {% if config.extra.github_username %}
-      <a aria-label="GitHub profile" target="_blank" rel="noopener" href="https://github.com/{{ config.extra.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      <a aria-label="GitHub profile" target="_blank" rel="noopener" href="{{ config.extra.github_url | default(value='https://github.com/' ~ config.extra.github_username) }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
       {% endif %}
       {% if config.extra.twitter_username %}
       <a aria-label="Twitter profile" target="_blank" rel="noopener" href="https://twitter.com/{{ config.extra.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
@@ -62,4 +61,3 @@ ga('send', 'pageview');
 </script>
 {% endif %}
 {% endmacro google_analytics %}
-

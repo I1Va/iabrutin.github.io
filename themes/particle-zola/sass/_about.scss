@@ -11,6 +11,21 @@
   margin: 10px;
 }
 
+.tech-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 120px;
+  margin-bottom: 12px;
+
+  img {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+  }
+}
+
 .user {
   text-align: center;
   font-size: 60px;
@@ -30,4 +45,8 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+
+  .project-link {
+    margin-top: 12px;
+  }
 }

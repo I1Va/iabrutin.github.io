@@ -2,31 +2,34 @@
 <div class="user-details">
   <h1>Biography</h1>
   <p>{{ config.extra.user_description }}</p>
-  <p>I am a MIPT student in Applied Mathematics and Computer Science, building my work at the intersection of systems programming, compiler infrastructure, computer architecture, and low-level performance engineering.</p>
-  <p>My recent work includes compiler and test-generation tasks at Baikal Electronics, course projects in C and C++, and independent graphics and tooling projects that grew out of my study track at MIPT.</p>
+  <p>I study at MIPT and build my work around C++, compiler tooling, computer architecture, and low-level performance work.</p>
+  <p>My recent experience includes PTX test generation and LLVM-based compiler tasks at Baikal Electronics, strong systems courses at MIPT, and personal projects in graphics and developer tooling.</p>
   <p><a class="project-link" href="{{ config.base_url ~ "/files/ivan-abrutin-cv-2026.pdf" }}">Open CV (PDF)</a></p>
 </div>
 <div class="user">
   <div class="tech">
     <h2>Education</h2>
-    <i class="devicon-javascript-plain colored"></i>
-    <i class="devicon-react-original-wordmark colored"></i>
-    <i class="devicon-nodejs-plain-wordmark"></i>
-    <p>MIPT, School of Applied Mathematics and Informatics. Strong coursework in C, C++, compilation, algorithms, and computer systems.</p>
+    <div class="tech-icons">
+      <img src="{{ config.base_url ~ "/img/mipt.png" }}" alt="MIPT" />
+      <img src="{{ config.base_url ~ "/img/bison.png" }}" alt="Bison" />
+    </div>
+    <p>MIPT, School of Applied Mathematics and Informatics. Core training in C and C++, algorithms, compilation, and systems programming, with course work that stays close to low-level implementation details.</p>
   </div>
   <div class="tech">
     <h2>Experience</h2>
-    <i class="devicon-linux-plain"></i>
-    <i class="devicon-git-plain colored"></i>
-    <i class="devicon-docker-plain-wordmark colored"></i>
-    <p>Baikal Electronics AI department internship, PTX test generation, LLVM-based compiler work, and academic projects in simulators, languages, and tooling.</p>
+    <div class="tech-icons">
+      <img src="{{ config.base_url ~ "/img/cuda.png" }}" alt="CUDA" />
+      <img src="{{ config.base_url ~ "/img/llvm.png" }}" alt="LLVM" />
+    </div>
+    <p>Baikal Electronics AI department internship with hands-on work in PTX test generation, LLVM-based compiler infrastructure, and practical C++ development around GPU tooling.</p>
   </div>
   <div class="tech">
     <h2>Focus</h2>
-    <i class="devicon-github-original"></i>
-    <i class="devicon-sass-original colored"></i>
-    <i class="devicon-html5-plain-wordmark colored"></i>
-    <p>Compilers, ISA and RTL study, microarchitecture, graphics, profiling, and building practical tools with clear technical depth.</p>
+    <div class="tech-icons">
+      <img src="{{ config.base_url ~ "/img/cpp.png" }}" alt="C++" />
+      <img src="{{ config.base_url ~ "/img/march.png" }}" alt="Microarchitecture" />
+    </div>
+    <p>C++ as the main implementation language, with growing depth in microarchitecture, ISA-level reasoning, compiler internals, profiling, and performance-sensitive systems work.</p>
   </div>
 </div>
 {% endmacro about %}
@@ -37,7 +40,7 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="MiniBlender screenshot" src="{{ config.base_url ~ "/img/blender.png" }}" />
+    <img class="project-shot" alt="MiniBlender screenshot" src="{{ config.base_url ~ "/img/blender.png" }}" />
   </div>
   <div class="contents">
     <h3>MiniBlender</h3>
@@ -52,7 +55,7 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountain landscape" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img class="project-shot" alt="PTX Snippy screenshot" src="{{ config.base_url ~ "/img/snippy.png" }}" />
   </div>
   <div class="contents-right">
     <h3>PTX Snippy and Compiler Work</h3>
@@ -61,7 +64,7 @@
       <li>PTX</li>
       <li>CUDA</li>
     </ul>
-    <p>After working on compiler and generator tasks at Baikal Electronics, I built a PTX-oriented prototype around LLVM Snippy. The project explored generation of PTX kernels, integration with CUDA Driver execution, and practical compiler tooling for GPU workflows.</p>
+    <p>After working on compiler and generator tasks at Baikal Electronics, I built a PTX-oriented prototype around LLVM Snippy. The result was a practical C++ pipeline for PTX kernel generation, CUDA Driver execution, and experiments around compiler workflows for GPU systems.</p>
     <a class="project-link" href="https://github.com/ctrlplusdvaraza/ptx-snippy">Repository</a>
   </div>
 </div>

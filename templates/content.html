@@ -17,7 +17,7 @@
   </div>
   <div class="tech">
     <h2>Focus</h2>
-    <p>Currently focused on microarchitecture, with an in-depth study of computer architecture and microarchitecture, and some exposure to RTL. C++ is my primary programming language.</p>
+    <p>Currently studying microarchitecture in depth, with some exposure to RTL. In parallel, I am practicing C++</p>
   </div>
 </div>
 {% endmacro about %}
@@ -54,6 +54,21 @@
     </ul>
     <p>After working on compiler and generator tasks at Baikal Electronics, I built a PTX-oriented prototype around LLVM Snippy. The result was a practical C++ pipeline for CUDA Driver with PTX kernel generation.</p>
     <a class="project-link" href="https://github.com/ctrlplusdvaraza/ptx-snippy">GitHub</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img class="project-shot" alt="LLVM visualizer pass screenshot" src="{{ config.base_url ~ "/img/llvm_pass.png" }}" />
+  </div>
+  <div class="contents">
+    <h3>LLVM Visualizer Pass</h3>
+    <ul>
+      <li>LLVM</li>
+      <li>C++</li>
+      <li>Instrumentation</li>
+    </ul>
+    <p>An LLVM instrumentation pass project for C++ analysis that plugs into Clang, records runtime behavior, and combines static IR structure with dynamic traces to generate execution and data-flow graphs.</p>
+    <a class="project-link" href="https://github.com/I1Va/llvm_visualizer_pass/">GitHub</a>
   </div>
 </div>
 {% endmacro projects %}
